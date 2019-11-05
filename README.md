@@ -2,14 +2,14 @@
  
 A simple method to compress a string
 
-pseudocode:
+pseudocode:<br>
 <i>
 string -> binary<br>
 binary -> digits<br>
 divide(digits, 2)<br>
 </i>
 
-result:
+result:<br>
 <i>
 {number of iterations}-{output digit}
 </i>
