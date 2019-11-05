@@ -9,6 +9,6 @@
     }
  	
  	$binary = implode('', $binary);
-
+ 	
     echo $binary;
 ?>
