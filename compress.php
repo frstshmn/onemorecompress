@@ -7,34 +7,30 @@
 	// 	}
 	// }
 
-
-	$string = "He";
-	$characters = str_split($string);
- 
+	$string = "Hello world";
     $binary = [];
-    foreach ($characters as $character) {
-        $data = unpack('H*', $character);
-        $binary[] = base_convert($data[1], 16, 2);
+    foreach ($string as $character) {
+    	echo
     }
  	
- 	$binary = implode('', $binary);
+ 	// $binary = implode('', $binary);
 
- 	$count = 1;
- 	$digits = 0;
+ 	// $count = 1;
+ 	// $digits = 0;
 
- 	for($i = 0; $i <= strlen($binary); $i++)
- 	{
- 		if($binary[$i] == $binary[$i-1])
-	 	{
-	 		$count = $count + 1;
-	 	}
-	 	else if($binary[$i] != $binary[$i-1])
-	 	{
-	 		$digits = $digits.$count;
-	 		$count = 1;
-	 	}
- 	}
-	echo $binary;
-	echo "<br>";
-   	echo $digits;
+ 	// for($i = 0; $i <= strlen($binary); $i++)
+ 	// {
+ 	// 	if($binary[$i] == $binary[$i-1])
+	 // 	{
+	 // 		$count = $count + 1;
+	 // 	}
+	 // 	else if($binary[$i] != $binary[$i-1])
+	 // 	{
+	 // 		$digits = $digits.$count;
+	 // 		$count = 1;
+	 // 	}
+ 	// }
+	// echo $binary;
+	// echo "<br>";
+ 	//echo $digits;
 ?>
