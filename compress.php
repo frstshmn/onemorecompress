@@ -9,11 +9,12 @@
 
 	$string = "Hello world";
     $binary = [];
-    foreach ($string as $character) {
-    	echo
+    $characters = str_split($string);
+    foreach ($characters as $character) {
+    	array_push($binary, decbin(ord($character)));
     }
  	
- 	// $binary = implode('', $binary);
+ 	$binary = implode('', $binary);
 
  	// $count = 1;
  	// $digits = 0;
@@ -30,7 +31,7 @@
 	 // 		$count = 1;
 	 // 	}
  	// }
-	// echo $binary;
+	echo($binary);
 	// echo "<br>";
- 	//echo $digits;
+ 	// echo $digits;
 ?>
